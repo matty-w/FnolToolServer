@@ -1,0 +1,101 @@
+.wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -86px;
+	margin-left: -89px;
+	text-align: center;
+}
+
+a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	margin: 20px auto;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+
+#claimsYes
+{
+	margin: auto;
+	position: relative;
+	display: inline-block;
+	width: 40%;
+}
+
+#claimsNo
+{
+	position: relative;
+	display: inline-block;
+	width: 40%;
+}
+
+
+a.button {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+a.button2 {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button2:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+}
+
+.box {
+  background-color: #218D9B;
+  height: 100px;
+  width: 100px;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
+
+.transform-active {
+  background-color: #45CEE0;
+  height: 200px;
+  width: 200px;
+}
+  
+#transitionAway
+{
+	position: relative;
+	margin: 0 auto;
+	border-style: solid;
+    border-width: 5px;
+	height: 200px;
+	width: 90%;
+}  
+
+#test
+{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: 15;
+  top: 20%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  border-style: solid;
+  border-width: 5px;
+}

@@ -1,0 +1,47 @@
+<html>
+<head>
+<style><%@include file="/pageStyle.css"%></style>
+</head>
+<body>
+
+    <div id="test">
+        centered content
+        	<div id="transitionAway">
+		<h3>Would You Like To Include The Device ID In Your Run?</h3>
+		<a id="claimsYes" href= "#" class="button" onclick="showClaimsForm()">Yes</a>
+		<a id="claimsNo" href= "#" class="button2" onclick="showEmailsForm()">No</a>
+	</div>
+    </div>
+	<h2>FNOL Report</h2>
+
+	
+
+
+	<form id="emailUploadForm" action="upload" method="post" enctype="multipart/form-data" hidden=true>
+		<input id="flatFileSearch" type='file' name='file' hidden=true/> <input id="flatFileExecute" type='submit' hidden=true>
+		<input id="emailSearch" type='file' name='file' multiple hidden=true/> <input id="emailExecute" type='submit' hidden=true>
+
+	</form>
+	
+	<script>
+		function showClaimsForm() {
+			document.getElementById("emailUploadForm").style.display = "block";
+			document.getElementById("flatFileSearch").style.display = "block";
+			document.getElementById("emailSearch").style.display = "none";
+			document.getElementById("flatFileExecute").style.display = "block";
+			document.getElementById("emailExecute").style.display = "none";
+		}
+	</script>
+
+	<script>
+		function showEmailsForm() {
+			document.getElementById("emailUploadForm").style.display = "block";
+			document.getElementById("flatFileSearch").style.display = "none";
+			document.getElementById("emailSearch").style.display = "block";
+			document.getElementById("flatFileExecute").style.display = "none";
+			document.getElementById("emailExecute").style.display = "block";
+		}
+	</script>
+
+</body>
+</html>
